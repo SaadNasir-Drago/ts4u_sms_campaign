@@ -4,7 +4,7 @@ declare global {
   var mongoose: MongooseCache | undefined;
 }
 
-const MONGODB_URI = process.env.MONGODB_URI || '';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://snasir2194:root@cluster0.tvbae.mongodb.net/sms_campaign';
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable');
