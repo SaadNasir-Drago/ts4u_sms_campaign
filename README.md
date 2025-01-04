@@ -2,7 +2,7 @@
 
 ### **Overview**
 
-This project is a real-time campaign management system that leverages RabbitMQ for message queuing and WebSocket (Socket.IO) for real-time client notifications. It allows users to create and manage campaigns with live updates on campaign scheduling, execution, and status changes.
+This project is a real-time campaign management system that leverages RabbitMQ for message queuing and WebSocket (Socket.IO) for real-time client notifications. It allows users to create and manage campaigns with live updates on campaign scheduling, execution, and status changes. All data are stored in my MongoDB Atlas database. The application was build with React and Typescript with Next.js API server endpoints for utilizing the REST APIs.
 
 ---
 
@@ -26,6 +26,11 @@ This project is a real-time campaign management system that leverages RabbitMQ f
 
 3. Start RabbitMQ:
    - Using Docker:
+     Pull docker image and start the container
+     ```bash
+     docker pull rabbitmq:3-management
+     ```
+
      ```bash
      docker run -d --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
      ```
